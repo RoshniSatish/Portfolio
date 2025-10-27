@@ -79,7 +79,7 @@ nav a {
 
 .image-section img {
   width: 90%;
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
   border-radius: 50%;           /* Makes it circular */
   object-fit: cover;            /* Ensures the image fills the circle */
@@ -109,6 +109,7 @@ nav a {
     font-size: 2.4rem;
   }
 }
+
 
 
 
