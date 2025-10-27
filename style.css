@@ -75,6 +75,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 
@@ -86,14 +87,21 @@ nav a {
   object-fit: cover; /* Ensures the image fills the circle */ 
   aspect-ratio: 1 / 1; /* Keeps perfect circle shape */ 
   box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* Soft shadow for depth */ 
+  position: relative;
+  z-index: 1;
+}
 
-  /* === Smooth fade-out edge === */
-  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
-  mask-image: radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: cover;
-  mask-size: cover;
+.image-section::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at center,
+    rgba(249,247,246,0) 60%,      /* transparent center */
+    rgba(249,247,246,1) 100%);    /* fade to background color */
+  pointer-events: none;
 }
 
 
@@ -117,6 +125,7 @@ nav a {
     font-size: 2.4rem;
   }
 }
+
 
 
 
