@@ -78,39 +78,17 @@ nav a {
   position: relative;
 }
 
-.image-fade-wrapper {
-  position: relative;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  overflow: hidden;
-  isolation: isolate; /* ensures blending works */
+.image-section img { 
+  width: 90%; 
+  max-width: 250px; 
+  height: auto; 
+  border-radius: 50%; /* Makes it circular */ 
+  object-fit: cover; /* Ensures the image fills the circle */ 
+  aspect-ratio: 1 / 1; /* Keeps perfect circle shape */ 
+  background-color: #f7e4a6; /* Optional: soft yellow background like inspo */ 
+  padding: 1rem; /* Adds a bit of breathing space */ 
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* Soft shadow for depth */ 
 }
-
-.image-fade-wrapper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-
-
-.image-fade-wrapper::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle at center,
-    rgba(249,247,246,0) 65%,   /* transparent center */
-    rgba(249,247,246,1) 100%   /* fade to page bg */
-  );
-  z-index: 2;
-  pointer-events: none;
-}
-
-
 
 /* === Responsive === */
 @media (max-width: 900px) {
@@ -132,6 +110,7 @@ nav a {
     font-size: 2.4rem;
   }
 }
+
 
 
 
