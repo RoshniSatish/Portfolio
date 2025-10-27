@@ -80,13 +80,13 @@ nav a {
 .image-section img {
   width: 90%;
   max-width: 400px;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
-  mask-image: radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
-  -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
-  display: block;
+  height: auto;
+  border-radius: 50%;           /* Makes it circular */
+  object-fit: cover;            /* Ensures the image fills the circle */
+  aspect-ratio: 1 / 1;          /* Keeps perfect circle shape */
+  background-color: #f7e4a6;    /* Optional: soft yellow background like inspo */
+  padding: 1rem;                /* Adds a bit of breathing space */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);  /* Soft shadow for depth */
 }
 
 /* === Responsive === */
@@ -109,4 +109,5 @@ nav a {
     font-size: 2.4rem;
   }
 }
+
 
