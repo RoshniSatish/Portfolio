@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f9f7f6;
+  background-color: #86CFDC;
   color: #222;
   overflow-x: hidden;
 }
@@ -109,6 +109,7 @@ nav a {
     font-size: 2.4rem;
   }
 }
+
 
 
 
