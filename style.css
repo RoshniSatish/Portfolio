@@ -85,7 +85,6 @@ nav a {
   border-radius: 50%; /* Makes it circular */ 
   object-fit: cover; /* Ensures the image fills the circle */ 
   aspect-ratio: 1 / 1; /* Keeps perfect circle shape */ 
-  padding: 1rem; /* Adds a bit of breathing space */ 
   box-shadow: 0 4px 20px rgba(0,0,0,0.05); /* Soft shadow for depth */ 
 }
 
@@ -109,6 +108,7 @@ nav a {
     font-size: 2.4rem;
   }
 }
+
 
 
 
