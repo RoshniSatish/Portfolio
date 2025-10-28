@@ -42,7 +42,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding: 0 6rem;
+  padding: 0 4rem;
   position: relative;
   min-height: 87vh; /* fill most of the screen */
   box-sizing: border-box;
@@ -52,7 +52,7 @@ nav a {
   flex: 1 1 50%;
   max-width: 600px;
   display: flex;
-  margin-bottom: 1.5rem;
+  /*margin-bottom: 1.5rem;*/
   flex-direction: column;
   justify-content: center;  /*vertical centering */
 }
@@ -69,7 +69,7 @@ nav a {
   font-size: 1.6rem;
   font-weight: 400;
   margin-top: 0;           /* ↓ remove default top spacing */
-  margin-bottom: 1.rem;     /* optional small gap before the paragraph */
+  margin-bottom: 0.2rem;     /* optional small gap before the paragraph */
   color: #222;
 }
 
@@ -142,6 +142,7 @@ nav a {
     font-size: 2.4rem;
   }
 }
+
 
 
 
