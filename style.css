@@ -44,7 +44,7 @@ nav a {
   align-items: stretch;
   padding: 0 6rem;
   position: relative;
-  min-height: 90vh; /* fill most of the screen */
+  min-height: 85vh; /* fill most of the screen */
   box-sizing: border-box;
 }
 
@@ -60,8 +60,16 @@ nav a {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   line-height: 1.2;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   color: #1b1b1b;
+}
+
+.text-section h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 0;           /* ↓ remove default top spacing */
+  margin-bottom: 1.5rem;     /* optional small gap before the paragraph */
+  color: #222;
 }
 
 .text-section p {
@@ -133,6 +141,7 @@ nav a {
     font-size: 2.4rem;
   }
 }
+
 
 
 
