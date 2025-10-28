@@ -44,11 +44,18 @@ nav a {
   align-items: center;
   padding: 4rem 6rem;
   flex-wrap: wrap;
+  position: relative;
+  min-height: 90vh; /* fill most of the screen */
+  box-sizing: border-box;
 }
 
 .text-section {
   flex: 1 1 50%;
   max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  height: 100%;
 }
 
 .text-section h1 {
@@ -74,16 +81,37 @@ nav a {
   flex: 1 1 40%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
 }
 
 .image-section img { 
   width: 100%; 
   max-width: 400px; 
-  height: auto;  
-  /*object-fit: cover;  Ensures the image fills the circle */ 
-  /*aspect-ratio: 1 / 1;  Keeps perfect circle shape */
+  height: auto; 
+}
+
+.bottom-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1b1b1b; /* dark line */
+}
+
+#projects {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-placeholder {
+  text-align: center;
+  color: #555;
+  font-family: 'Inter', sans-serif;
 }
 
 /* === Responsive === */
@@ -106,6 +134,7 @@ nav a {
     font-size: 2.4rem;
   }
 }
+
 
 
 
