@@ -42,41 +42,43 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding: 0 4rem;
+  padding: 0 6vw;
   position: relative;
   min-height: 95vh; /* fill most of the screen */
   box-sizing: border-box;
+  gap: 4vw;
 }
 
 .text-section {
-  flex: 1 1 50%;
-  max-width: 600px;
+  flex: 0 0 45%;
+  max-width: 650px;
   display: flex;
-  margin-bottom: 4rem;
   flex-direction: column;
   justify-content: center;  /*vertical centering */
+  transform: translateY(-2vh)
 }
 
 .text-section h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 3rem;
+  font-size: clamp(2.2rem, 3vw + 1rem, 3.5rem);
   line-height: 1.2;
   margin-bottom: 0.5rem;
   color: #1b1b1b;
 }
 
 .text-section h2 {
-  font-size: 1.6rem;
+  font-size: clamp(1.2rem, 1.2vw + 0.8rem, 1.6rem);
   font-weight: 400;
   margin-top: 0;           /* ↓ remove default top spacing */
-  margin-bottom: 0.2rem;     /* optional small gap before the paragraph */
+  margin-bottom: 0.4rem;     /* optional small gap before the paragraph */
   color: #222;
 }
 
 .text-section p {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 0.9vw + 0.7rem, 1.1rem);
   line-height: 1.8;
   color: #555;
+  max-width: 90%;
 }
 
 .text-section strong {
@@ -85,12 +87,11 @@ nav a {
 
 /* === Image Section === */
 .image-section {
-  flex: 1 1 40%;
+  flex: 0 0 45%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   position: relative;
-  padding-bottom: 2px;
 }
 
 /* Wrapper to stack both images */
@@ -103,8 +104,8 @@ nav a {
 
 /* The top image: framed art gallery */
 .art-frames {
-  width: 100%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 420px;
   height: auto;
   margin-bottom: 50px; /* adjust overlap, tweak this number */
   margin-top: -15px;
@@ -113,8 +114,8 @@ nav a {
 
 /* The bottom image: girl painting */
 .main-image {
-  width: 100%;
-  max-width: 400px;
+  width: 90%;
+  max-width: 420px;
   height: auto;
   z-index: 1;
 }
@@ -162,6 +163,7 @@ nav a {
     font-size: 2.4rem;
   }
 }
+
 
 
 
