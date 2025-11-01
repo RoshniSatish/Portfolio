@@ -105,18 +105,15 @@ nav a {
 
 /* The top image: framed art gallery */
 .art-frames {
-  width: 90%;
-  max-width: 420px;
-  height: auto;
   margin-bottom: 50px; /* adjust overlap, tweak this number */
   margin-top: -15px;
   z-index: 2;
 }
 
 /* The bottom image: girl painting */
+.art-frames,
 .main-image {
-  width: 90%;
-  max-width: 420px;
+  width: clamp(250px, 22vw, 600px);
   height: auto;
   z-index: 1;
 }
@@ -164,6 +161,7 @@ nav a {
     font-size: 2.4rem;
   }
 }
+
 
 
 
